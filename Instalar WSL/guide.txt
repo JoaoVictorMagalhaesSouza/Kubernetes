@@ -1,0 +1,8 @@
+1) Abrir o PowerShell como Administrador
+2) Executar: wsl --install
+3) Após executar, reiniciar a máquina
+4) Verificar versão do WSL instalada: wsl -l -v
+	4.1) Por via de dúvidas, executar: wsl --set-default-version 2
+5) Ir em: https://docs.docker.com/desktop/install/windows-install/
+	5.1) Baixar o executável de instalação
+	5.2) Realizar a instalação
