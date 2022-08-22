@@ -1,0 +1,91 @@
+################################################################
+			docker ps
+################################################################
+docker ps: Containers que estão rodando ou não.
+docker ps -a: Todos os containers que já executaram na máquina.
+
+################################################################
+			docker stop
+################################################################
+docker stop container_id: Encerra o container do container_id (pode ser só os 3 primeiros dígitos do id).
+docker stop names: Encerra o container com o nome passado.
+
+################################################################
+			docker run
+################################################################
+Cria um novo container
+-it : Diz que o container será executado iterativamente (acesso iterativo à imagem)
+-d : Detached, deixa um container rodando em background.
+-p p1:p2 : Expõe uma porta para acesso (p1 é a porta que estou expondo no meu PC e p2 é a porta que expus meu container) 
+--name : Define um nome para o container criado
+--rm : Remove o container após ser executado
+
+################################################################
+			docker start
+################################################################
+Roda um container já existente que não está em execução
+docker start container_id: Executa o container do container_id.
+docker start names: Executa o container com o nome passado.
+-it: Vai executar em modo iterativo.
+
+################################################################
+			docker logs
+################################################################
+Permite visualizar os logs do container
+docker logs container_id: Mostra os logs do container referenciado.
+
+################################################################
+			docker rm
+################################################################
+Remove um container
+docker -rm container_id: Remove o container referenciado.
+-f: Remove o container se ele estiver em execução.
+
+################################################################
+			docker images
+################################################################
+Lista todas as imagens instaladas
+docker images: Mostra todas as imagens instaladas
+
+################################################################
+			docker tag
+################################################################
+docker tag image_id new_name:tag : Nomeia uma imagem para um novo nome com a possibilidade de adicionar uma tag.
+
+################################################################
+			docker build
+################################################################
+-t nome:tag : Permite definir o nome da imagem com uma tag.
+
+################################################################
+			docker rmi
+################################################################
+Remove uma imagem
+docker rmi imagem_id: Remove a imagem referenciada
+-f: Força a remoção de uma imagem que possui um container em execução.
+
+################################################################
+			docker system prune
+################################################################
+Remove as imagens, containers e networks não utilizadas.
+
+################################################################
+			docker cp
+################################################################
+Permite copiar arquivos de/para um container em execução
+docker cp nome_container:path_origem path_destino
+
+###############################################################
+			docker top
+###############################################################
+docker top container_id: algumas informações básicas do container
+
+###############################################################
+			docker inspect
+###############################################################
+docker inspect container_id: algumas informações mais detalhadas do container
+
+###############################################################
+			docker stats
+###############################################################
+Monitora memória, network e CPU dos containers em execução.

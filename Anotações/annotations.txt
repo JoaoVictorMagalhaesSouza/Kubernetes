@@ -1,0 +1,9 @@
+Containers geralmente têm responsabilidade única.
+	- Isso é o que difere de uma VM, por exemplo, que pode executar várias tarefas.
+Eles são isolados do mundo externo e para acessá-los é preciso expor uma porta de acesso.
+
+As imagens do Docker são constituidas em camadas (layers) utilizando a cache.
+	- Quando uma modificação é feita, apenas as layers depois da linha atualizada são refeitas.
+
+
+	
